@@ -8,3 +8,7 @@
 1 news Header Component where header and routing to different component logic is present and along with this i have made a custom filter to filtred the news region wise .by Default India is the region selected but if ones want to see news of different region he/she can explore in their specific regional language. and for this i have used EventEmitter for  updating the news content.
 
 Rest 1 service method which has method to get news on specific domain and and global variable which is set to india(in) but user can change it to any region.
+
+
+https://user-images.githubusercontent.com/61315497/125195409-16689080-e273-11eb-9d14-ba7841cf138d.mp4
+
