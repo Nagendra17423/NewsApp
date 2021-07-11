@@ -1,27 +1,10 @@
-# NewsApp
+ It is a SPA(Single page Application) built using AngularJs and used concepts of(angular routing,angular form,Dependency injection,Handling rest apis,Custom filter(for region wise news),and ngx loading bar package for synchronizing the time for fetching the news  with ui.) 
+ Have  10 Components and 1 Service file .
+ In 10 Components File 
+ 7 Components is used to get News on Specific Domain(Science sports,Technology,Top-Heaflines,etc)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
+ 1 error Component in case any wrong url is entered (mistakenly or purposely) angular will redirect it to /not-found url where i have handled this use case.
 
-## Development server
+1 news Header Component where header and routing to different component logic is present and along with this i have made a custom filter to filtred the news region wise .by Default India is the region selected but if ones want to see news of different region he/she can explore in their specific regional language. and for this i have used EventEmitter for  updating the news content.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Rest 1 service method which has method to get news on specific domain and and global variable which is set to india(in) but user can change it to any region.
