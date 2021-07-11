@@ -1,7 +1,7 @@
  It is a SPA(Single page Application) built using AngularJs and used concepts of(angular routing,angular form,Dependency injection,Handling rest apis,Custom filter(for region wise news),and ngx loading bar package for synchronizing the time for fetching the news  with ui.) 
  Have  10 Components and 1 Service file .
  In 10 Components File 
- 7 Components is used to get News on Specific Domain(Science sports,Technology,Top-Heaflines,etc)
+ 7 Components is used to get News on Specific Domain(Science sports,Technology,Top-Headlines,etc)
 
  1 error Component in case any wrong url is entered (mistakenly or purposely) angular will redirect it to /not-found url where i have handled this use case.
 
