@@ -1,0 +1,49 @@
+<ngx-loading-bar [color]="'blue'" [includeSpinner]="false"></ngx-loading-bar>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/">NewsApp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/entertainment">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/tech-news">Technology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/business">Business </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/health">Health</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/science">Science</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/sports">Sports</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <form class="d-flex" #form="ngForm">
+        
+        <select class="form-select" 
+        aria-label="Default select example"
+        name="name" 
+        (change)="RegionCall()"
+        [(ngModel)]="region">
+        
+          <option *ngFor="let i of select"
+           value="{{i.region}}" [attr.selected]="i.name=='India(Default)'">{{i.name}}</option>
+          
+        </select>
+      </form>
+    </div>
+  </nav>
+  
+  
+  
